@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/home-page/pricing/pricing-bahasa/",
+      "permanent": false
+    }
+  ]
+}
