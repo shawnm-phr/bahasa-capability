@@ -293,18 +293,17 @@
      passed in, so the same source can appear at nav size, panel-head
      size, or the ladder heading's size.
 
-     IMG_BASE points at the hosted WordPress media library so both the
-     English and Bahasa pages load the same images regardless of their
-     own folder depth. */
-  var IMG_BASE = 'https://peopleshr.com/wp-content/uploads/2026/07/';
+     IMG_BASE is relative to the page itself (pricing-bahasa/index.html),
+     so the icons load from pricing-bahasa/images/module-icons/. */
+  var IMG_BASE = 'images/module-icons/';
   var MODULE_ICON_SRC = {
-    HR: IMG_BASE + 'HRIcon.webp',
-    Time: IMG_BASE + 'TimeIcon.webp',
-    Pay: IMG_BASE + 'PayIcon.webp',
-    Talent: IMG_BASE + 'TalentIcon.webp',
-    Engagement: IMG_BASE + 'EngagementIcon.webp',
+    HR: IMG_BASE + 'HR%20Icon.webp',
+    Time: IMG_BASE + 'Time%20Icon.webp',
+    Pay: IMG_BASE + 'Pay%20Icon.webp',
+    Talent: IMG_BASE + 'Talent%20Icon.webp',
+    Engagement: IMG_BASE + 'Engagement%20Icon.webp',
     Recruitment: IMG_BASE + 'Recruitment.webp',
-    Insights: IMG_BASE + 'InsightsIcon.webp'
+    Insights: IMG_BASE + 'Insights%20Icon.webp'
   };
   function moduleIcon(name, sizeClass) {
     var src = MODULE_ICON_SRC[name];
